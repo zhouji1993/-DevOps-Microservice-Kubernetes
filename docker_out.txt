@@ -1,0 +1,25 @@
+<paste log output from Docker prediction, here>
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 262-041-526
+[2020-04-11 11:02:36,642] INFO in app: JSON payload: 
+{json_payload}
+[2020-04-11 11:02:36,647] INFO in app: Inference payload DataFrame: 
+{inference_payload}
+[2020-04-11 11:02:36,647] INFO in app: Scaling Payload: 
+{payload}
+172.17.0.1 - - [11/Apr/2020 11:02:36] "POST /predict HTTP/1.1" 200 -
+[2020-04-11 11:18:16,507] INFO in app: JSON payload: 
+{json_payload}
+[2020-04-11 11:18:16,509] INFO in app: Inference payload DataFrame: 
+{inference_payload}
+[2020-04-11 11:18:16,509] INFO in app: Scaling Payload: 
+{payload}
+172.17.0.1 - - [11/Apr/2020 11:18:16] "POST /predict HTTP/1.1" 200 -
+
