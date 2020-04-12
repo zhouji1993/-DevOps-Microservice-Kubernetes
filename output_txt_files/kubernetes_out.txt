@@ -1,0 +1,23 @@
+<paste log output from Kubernetes-mediated prediction, here>
+On my computer, kubectl cannot directly pull the image, so I have to use EC2 to test the last step
+(.devops) ubuntu@ip-172-31-60-189:~/DevOps-Microservice-Kubernetes$ sh run_kubernetes.sh 
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+deployment.apps/microservice created
+NAME                            READY   STATUS              RESTARTS   AGE
+microservice-7b7748445f-hkhzq   0/1     ContainerCreating   0          1s
+error: unable to forward port because pod is not running. Current status=Pending
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+(.devops) ubuntu@ip-172-31-60-189:~/DevOps-Microservice-Kubernetes$ kubectl get pods
+
+NAME                            READY   STATUS    RESTARTS   AGE
+<<<<<<< HEAD
+microservice-7b7748445f-hkhzq   1/1     Running   0          43s
+=======
+microservice-7b7748445f-hkhzq   1/1     Running   0          43s
+>>>>>>> b195cfb283a0cd80e5233c99bb6ea8a6ab0127a0
